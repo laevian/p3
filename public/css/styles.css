@@ -1,0 +1,111 @@
+body
+{
+  font-family: 'Segoe UI', 'Tahoma', 'sans-serif';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #454545;
+  background-color: #f7f7f7;
+  background-image:url('/images/old_moon_@2X.jpg');
+}
+
+a
+{
+  color: #3EA392;
+}
+
+h1
+{
+  margin-top: 0;
+  position: absolute;
+  top: 0px;
+  left: 15%;
+  right: 15%;
+  height: 3rem;
+  background-color: #72d6c5;
+  color: #6e6e6e;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  vertical-align: middle;
+  padding-top: .35rem;
+  padding-left: .35rem;
+  box-sizing: border-box;
+}
+
+p
+{
+  margin-top: 5rem;
+  margin-bottom: 0;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+footer
+{
+  position: absolute;
+  bottom: 0;
+  height: 3rem;
+  background-color: #f7f7f7;
+  text-align: center;
+  color: #454545;
+  right: 15%;
+  left: 15%;
+}
+
+.error{
+color: #ff0000;
+}
+
+.error li{
+list-style-type: none;
+}
+
+.container
+{
+  text-align: center;
+  position: absolute;
+  box-sizing: border-box;
+  width: 70%;
+  left: 15%;
+  right: 15%;
+  top: 10%;
+  background-color: #ffffff;
+  top: 3rem;
+  bottom: 0;
+  overflow: auto;
+}
+
+.button
+{
+  border-radius: 1rem;
+  width: 15rem;
+  height: 3rem;
+  margin: 10% 5%;
+  box-sizing: border-box;
+  display: inline-block;
+  color: #454545;
+  background-color: #72d6c5;
+  vertical-align: middle;
+  box-shadow: 0px 4px #3EA392, 4px 0px #B2F7EC;
+}
+
+.buttontext
+{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  display: inline-block;
+}
+
+.lorem
+{
+    width: 60%;
+    padding: 4rem;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 4rem;
+}
