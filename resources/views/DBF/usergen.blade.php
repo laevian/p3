@@ -17,7 +17,7 @@
   @endif
 
   <form method="GET" action="/usergen/create">
-  Number of Paragraphs: <input name="numUsers">
+  Number of Paragraphs: <input name="numUsers" value='{{ old('numUsers') }}'>
   <input type="submit" value="Submit">
 </form><br><br>
 

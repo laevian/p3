@@ -17,7 +17,7 @@
   @endif
 
   <form method="GET" action="/lorem/create">
-  Number of Paragraphs: <input name="numPars">
+  Number of Paragraphs: <input name="numPars" value='{{ old('numPars') }}'>
   <input type="submit" value="Submit">
   </form><br><br>
 
