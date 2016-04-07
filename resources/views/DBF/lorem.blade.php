@@ -1,4 +1,4 @@
-@extends("layouts.master")
+@extends('layouts.master')
 
 @section('header')
 <h1>Lorem Ipsum Text Generator</h1>
