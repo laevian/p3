@@ -151,6 +151,7 @@ return [
         /*
          * Application Service Providers...
          */
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
         DBF\Providers\AppServiceProvider::class,
         DBF\Providers\AuthServiceProvider::class,
         DBF\Providers\EventServiceProvider::class,

@@ -19,12 +19,12 @@
   <form method="GET" action="/lorem/create">
   Number of Paragraphs: <input name="numPars">
   <input type="submit">
-</form><br><br>
+  </form><br><br>
 
-  @if(isset($paragraphs))
-  <div class="lorem">{!!$paragraphs!!}</div>
-  @else
+@if(isset($paragraphs))
+<div class="lorem">{{$paragraphs}}</div>
+@else
 
-  @endif
+@endif
 
 @stop
