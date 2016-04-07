@@ -10,7 +10,7 @@ A lorem ipsum text generator and a random user generator.
 
 ##Demo Video
 
-Will be updated when available.
+[P3 Demo Video](https://youtu.be/KjtsX2NHvLw)
 
 ##Dependencies
 
