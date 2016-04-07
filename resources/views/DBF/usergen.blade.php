@@ -1,10 +1,8 @@
 @extends('layouts.master')
 
 @section('header')
-<h1>Random User Generator</h1>
+<a href="/"><h1>Developer's Best Friend</h1></a>
 @stop
-
-
 
 @section('content')
 <p>To use the Random User generator, select the number of users (1-10) you would
@@ -18,13 +16,13 @@
   </ul>
   @endif
 
-  <form method="GET" action="/lorem/create">
-  Number of Paragraphs: <input name="numPars">
-  <input type="submit">
+  <form method="GET" action="/usergen/create">
+  Number of Paragraphs: <input name="numUsers">
+  <input type="submit" value="Submit">
 </form><br><br>
 
-  @if(isset($paragraphs))
-  <div class="lorem">{{$paragraphs}}</div>
+  @if(isset($users))
+  <div class="users">{!!$users!!}</div>
   @else
 
   @endif

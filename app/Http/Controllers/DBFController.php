@@ -11,8 +11,7 @@ class DBFController extends Controller {
     * Responds to requests to GET /books
     */
     public function getIndex() {
-          //return view("DBF.index");
-          echo ("hi!");
+          return view("DBF.index");
     }
 
     public function getLorem() {
@@ -37,10 +36,33 @@ class DBFController extends Controller {
     }
 
     public function getUserGen() {
-        //return view("DBF.usergen");
+        return view("DBF.usergen");
     }
 
-    //public function getUsers($numUsers = 3) {
+    public function getUsers(Request $request) {
 
-    //}
+      $this->validate($request, [
+        'numUsers' => 'required|numeric|min:1|max:10',
+      ]);
+
+      $userString = '';
+
+      $numOfPars = $request->input('numUsers');
+      for($i = 0; $i < $numOfPars; $i++)
+      {
+        $userString .= '<span class="label">Name</span> ';
+        $userString .= \Faker\Name::firstName();
+        $userString .= ' ';
+        $userString .= \Faker\Name::lastName();
+        $userString .= '<br> <span class="label">Phone Number</span> ';
+        $userString .= \Faker\PhoneNumber::phoneNumber();
+        $userString .= '<br> <span class="label">Company Name</span> ';
+        $userString .= \Faker\Company::name();
+        $userString .= '<br><br>';
+      }
+
+      return view("DBF.usergen")->with('users', $userString);
+
+
+    }
 }

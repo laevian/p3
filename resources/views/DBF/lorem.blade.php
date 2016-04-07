@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('header')
-<h1>Lorem Ipsum Text Generator</h1>
+<a href="/"><h1>Developer's Best Friend</h1></a>
 @stop
 
 @section('content')
@@ -18,13 +18,13 @@
 
   <form method="GET" action="/lorem/create">
   Number of Paragraphs: <input name="numPars">
-  <input type="submit">
+  <input type="submit" value="Submit">
   </form><br><br>
 
-@if(isset($paragraphs))
-<div class="lorem">{{$paragraphs}}</div>
-@else
+  @if(isset($paragraphs))
+    <div class="lorem">{!!$paragraphs!!}</div>
+    @else
 
-@endif
+  @endif
 
 @stop

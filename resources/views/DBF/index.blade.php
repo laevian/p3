@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('header')
-<h1>Developer's Best Friend</h1>
+<a href="/"><h1>Developer's Best Friend</h1></a>
 @stop
 
 @section('content')
